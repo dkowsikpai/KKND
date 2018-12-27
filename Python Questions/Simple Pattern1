@@ -1,0 +1,24 @@
+
+# Question 1
+Print the pattern given in sample output.
+Sample output:
+Input the number of & required:13
+&	&	&	&	&	&	&	&	&	&	&	&	&	
+	&	&	&	&	&	&	&	&	&	&	&	
+		&	&	&	&	&	&	&	&	&	
+			&	&	&	&	&	&	&	
+				&	&	&	&	&	
+					&	&	&	
+						&	
+
+Solution:
+
+n = int(input("Input the number of & required:"))
+m = int(((n-1)/2)+1)
+j = 1
+for i in range(m):
+    # for k in range(i)
+    print("\t"*i, end="")
+    print("&\t"*(n-j+1), end="")
+    print()
+    j = j+2
